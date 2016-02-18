@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>MarkX</title>
+</head>
+<body background="London.jpg" style="background-size:cover;">
+<h1 style="font-family:Castellar;text-align:center;">MarkX</h1>
+<h2 style="text-align:center;">A Locating and Tracking App.</h2>
+<h3>Created by Catherine Tucker and Ian Stenerson</h3>
+<p> <b>Description:</b> We have designed a mobile application for finding, saving, and sharing specific noteworthy locations. 
+A map of your immediate area is displayed, and from there you can place a point, or an "X," upon a spot you need to remember, 
+be it where you parked your car, the best diner for breakfast you've ever been to, or a quirky gas station in the shape of a 
+cowboy hat. If you consider the location interesting and think others would as well, this is the app for you. </p>
+<p>
+It will be composed of three categories: Personal, Shared With Me, and Community. Personal will be used for locations only 
+relevant to you, may this be where your car is parked, where your hotel is in a foreign land, or that shawarma restaurant you 
+saw on 5th Avenue you aren't craving now but want to try later. Shared With Me will be specifically for recommendations from 
+friends that you have added on the app. Perhaps your friends found a cafe with the best hazelnut latte they've ever had, or are
+ trying to point you to exactly where your rendezvous point is when you have plans to meet up. The large, overarching category 
+ is the Community map where anybody can place a pin and recommend it to the general population. The versatility of the three tabs
+ allows the app to be useful for anybody, whether they are prone to lose things or get lost and would need the Personal tab or
+ are simply interested in making an obscure but worthwhile venue more popular via the Community tab.
+</p>
+<p style="text-align:right; padding-RIGHT: 270px;" ><i>Click on images to flip through screenshots.</i>
+<center><img style="float:right" width="400px" height="auto" id="Shot" border="5" src="screenshot1.jpg" hspace="200" onclick="NextImage()"></center>
+</p>
+<p> <b>Features:</b> 
+<ul style="list-style-type:none" >
+	<li> <b>X</b> &emsp;Pinpoint an exact location (an X) on a map.</li>
+	<li> <b>X</b> &emsp;A Notepad that allows you to name or describe your X.</li> <!--"Third lampost from the end"-->
+	<li> <b>X</b> &emsp;The ability to save images of your X's.</li>
+	<li> <b>X</b> &emsp;Share X's and routes with your friends!</li>
+	<li> <b>X</b> &emsp;Trace your route for an easy return to your X.</li>
+</ul>
+</p>
+<p style="margin-top:100px"> <b>The Team:</b> Pard Nur, a small programming company based in <br>Spokane, WA, is composed of
+<a href="Quathryn.html">Catherine Tucker</a> and <a href="EEEEEEEYAN.html">Ian Stenerson</a>.<br> 
+The company was established in 2016 in a classroom of Whitworth<br> University. </p>
+</body>
+<script>
+var i = 0;
+var Shots = new Array("screenshot1.jpg","screenshot3.jpg","screenshot2.jpg","screenshot4.jpg");
+function NextImage()
+{
+	if(i == 0){
+		document.getElementById("Shot").src = Shots[i];
+		i = i + 1;
+	}
+	else if(i == 1){
+		document.getElementById("Shot").src = Shots[i];
+		i = i + 1;
+	}
+	else if(i == 2){
+		document.getElementById("Shot").src = Shots[i];
+		i = i + 1;
+	}
+	else if(i == 3){
+		document.getElementById("Shot").src = Shots[i];
+		i = 0;
+	}
+}
+</script>
+</html>
